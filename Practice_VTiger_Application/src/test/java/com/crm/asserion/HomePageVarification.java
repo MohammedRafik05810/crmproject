@@ -19,6 +19,7 @@ public class HomePageVarification {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("http://localhost:8888");
+		System.out.println("hi");
 		
 		driver.findElement(By.name("user_name")).sendKeys("admin");
 		driver.findElement(By.name("user_password")).sendKeys("admin");
